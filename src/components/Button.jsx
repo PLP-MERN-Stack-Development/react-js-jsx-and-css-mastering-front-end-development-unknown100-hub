@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 /**
  * Button component with different variants
@@ -57,13 +56,4 @@ const Button = ({
   );
 };
 
-Button.propTypes = {
-  variant: PropTypes.oneOf(['primary', 'secondary', 'danger', 'success', 'warning']),
-  size: PropTypes.oneOf(['sm', 'md', 'lg']),
-  disabled: PropTypes.bool,
-  onClick: PropTypes.func,
-  children: PropTypes.node.isRequired,
-  className: PropTypes.string,
-};
-
-export default Button; 
+export default Button;

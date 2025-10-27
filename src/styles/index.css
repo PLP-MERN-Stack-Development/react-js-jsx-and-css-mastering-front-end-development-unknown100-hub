@@ -1,0 +1,23 @@
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind layers: put custom base styles and components inside @layer so
+   PostCSS + Tailwind process them correctly. This is the recommended
+   approach for adding global styles and component classes. */
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+  }
+}
+
+@layer components {
+  .fade-enter {
+    @apply opacity-0;
+  }
+
+  .fade-enter-active {
+    @apply transition-opacity duration-300 opacity-100;
+  }
+}
